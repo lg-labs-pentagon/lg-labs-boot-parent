@@ -15,13 +15,7 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-          server-id: github
-          settings-path: ${{ github.workspace }}
-          
-      - name: Build with Maven
-        run: mvn clean package 
-        
-      - name: Publish to GitHub Packages Apache Maven
-        run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
+      - name: Deploy to GitHub
+        run: mvn --batch-mode -DuseGitHubPackages=true deploy
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_GITHUB_TOKEN }}
