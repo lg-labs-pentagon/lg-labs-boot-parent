@@ -30,11 +30,15 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-logging</artifactId>
         </dependency>
+        <!---
+        TODO: Analyze where is the best place for this dependency,
+        although, only para application service, no necessary with domain core.
+
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>31.0.1-jre</version>
-        </dependency>
+        </dependency>-->
     </dependencies>
     <build>
         <pluginManagement>
