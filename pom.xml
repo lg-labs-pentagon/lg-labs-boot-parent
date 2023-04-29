@@ -83,7 +83,13 @@
                 <artifactId>jacoco-maven-plugin</artifactId>
             </plugin>
         </plugins>
-
+<distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/lg-labs-pentagon/lg-labs-boot-parent</url>
+    </repository>
+</distributionManagement>
     </build>
 
 </project>
