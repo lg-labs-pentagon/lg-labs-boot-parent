@@ -11,14 +11,14 @@
     </parent>
     <groupId>com.labs.lg.pentagon</groupId>
     <artifactId>lg-labs-boot-parent</artifactId>
-    <version>1.0.0-alpha</version>
+    <version>1.0.0-alpha.1</version>
     <packaging>pom</packaging>
 
     <properties>
-        <maven-compiler-plugin.version>3.9.0</maven-compiler-plugin.version>
-        <maven-failsafe-plugin.version>3.0.0-M7</maven-failsafe-plugin.version>
-        <maven-surefire-plugin.version>3.0.0-M7</maven-surefire-plugin.version>
-        <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
+        <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
+        <maven-failsafe-plugin.version>3.1.0</maven-failsafe-plugin.version>
+        <maven-surefire-plugin.version>3.1.0</maven-surefire-plugin.version>
+        <jacoco-maven-plugin.version>0.8.10</jacoco-maven-plugin.version>
     </properties>
     <dependencies>
         <dependency>
