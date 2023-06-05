@@ -3,7 +3,7 @@ name: release
 on:
   workflow_run:
     workflows: ['labeler']
-    branches: [ 'main', 'hotfix/*' ]
+    branches: [ 'hotfix/*' ]
     types: [ completed ]
 
 env:
